@@ -80,3 +80,11 @@
     font-size: 1.4rem;
     font-weight: bold;
 }
+
+/* A propos */
+
+.containerApropos {
+    height: 12rem;
+    width: 100%;
+    background-color:rgb(24, 24, 24,);
+}
