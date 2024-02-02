@@ -1,8 +1,10 @@
-import styles from "@/styles/separator.module.css";
+// components/Separator.js
+import React from 'react';
+import styles from '@/styles/separator.module.css'; 
 
 const Separator = () => {
     return (
-        <div className={styles.Separator}/>
+        <div className={styles.separator}></div>
     );
 };
 

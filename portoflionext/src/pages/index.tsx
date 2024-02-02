@@ -40,7 +40,30 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.containerApropos}>
-          <Separator />
+        <Separator />
+          <div className={styles.containerTextApropos}>
+            <div className={styles.bio}>
+              <p>
+                Je m'appelle Charles de feligonde, j'ai 20 ans, je suis étudiant à l'EPSI - Paris La Défense. 
+                Je suis en 3ème année du programme Socle Numérique que propose l'EPSI avec obtention du BTS SIO 
+                (Services Informatiques aux Organisations) avec la spécialité SLAM (Solutions Logicielles et Applications Métier). 
+                Plus jeune, jamais je n'aurai pensé entrer dans ce domaine et c'est en dernière année de lycée général, 
+                par manque d'idée pour mon avenir, que l'idée de me tourner vers l'informatique m'est venue. Aujourd'hui, 
+                c'est grâce à ma curiosité et ma créativité que mes choix m'ont amenés vers le développement.
+              </p>
+            </div>
+            <div className={styles.returnCards}>
+              <div>
+
+              </div>
+              <div>
+
+              </div>
+              <div>
+
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </>

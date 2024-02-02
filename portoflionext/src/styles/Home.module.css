@@ -84,7 +84,30 @@
 /* A propos */
 
 .containerApropos {
-    height: 12rem;
+    height: 50rem;
     width: 100%;
-    background-color:rgb(24, 24, 24,);
+    background-color:rgb(24, 24, 24);
+    padding-top: 60px;
+}
+
+.containerTextApropos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.bio {
+    margin-left: 13%;
+    height: 33rem;
+    width: 350px;
+    background: rgb(46, 46, 46);
+}
+
+.bio p{
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    height: auto;
+    font-size: 20px;
+    padding: 1.5rem 0.7rem;
+    text-indent: 50px;
 }
