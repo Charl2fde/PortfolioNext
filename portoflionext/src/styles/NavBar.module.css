@@ -3,9 +3,10 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #000000;
+    background: rgb(24, 24, 24);
     padding: 0.5rem 0rem;
     color: #fff;
+    height: 10vh;
 }
 
 .logo img {

@@ -16,10 +16,29 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav style={inter.style}>
-        <NavBar/>
+        <NavBar />
       </nav>
-      <main>
-        salut
+      <main style={inter.style}>
+        <section className={styles.containerHomePage}>
+          <div className={styles.titleHomePage}>
+            <h1>Charles de Feligonde</h1>
+          </div>
+          <div className={styles.descritpionHomePage}>
+            <p>Etudiant en 3ème année à l’EPSI Paris <br />
+              Passionné du <span>développement web</span>, j’aime <br />
+              <span>créer</span> et participer à des projets.</p>
+          </div>
+          <div className={styles.buttonContainer}>
+            <div className={styles.buttonFade}>
+              <div className={styles.buttonCV}>
+                <p>Mon CV</p>
+              </div>
+            </div>
+            <div className={styles.buttonProjets}>
+              <p>Projets</p>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
