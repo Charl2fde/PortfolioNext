@@ -40,29 +40,64 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.containerApropos}>
-        <Separator />
+          <Separator />
+          <div className={styles.titleApropos}>
+            <h1>A propos de moi</h1>
+          </div>
           <div className={styles.containerTextApropos}>
-            <div className={styles.bio}>
-              <p>
-                Je m'appelle Charles de feligonde, j'ai 20 ans, je suis étudiant à l'EPSI - Paris La Défense. 
-                Je suis en 3ème année du programme Socle Numérique que propose l'EPSI avec obtention du BTS SIO 
-                (Services Informatiques aux Organisations) avec la spécialité SLAM (Solutions Logicielles et Applications Métier). 
-                Plus jeune, jamais je n'aurai pensé entrer dans ce domaine et c'est en dernière année de lycée général, 
-                par manque d'idée pour mon avenir, que l'idée de me tourner vers l'informatique m'est venue. Aujourd'hui, 
-                c'est grâce à ma curiosité et ma créativité que mes choix m'ont amenés vers le développement.
-              </p>
-            </div>
-            <div className={styles.returnCards}>
-              <div>
-
-              </div>
-              <div>
-
-              </div>
-              <div>
-
+            <div className={styles.containerBio}>
+              <div className={styles.bio}>
+                <p>
+                  Je m'appelle Charles de Feligonde, j'ai 20 ans, je suis étudiant à l'EPSI - Paris La Défense.
+                  Je suis en 3ème année du programme Socle Numérique que propose l'EPSI avec obtention du BTS SIO
+                  (Services Informatiques aux Organisations) avec la spécialité SLAM (Solutions Logicielles et Applications Métier).
+                  Plus jeune, jamais je n'aurai pensé entrer dans ce domaine et c'est en dernière année de lycée général,
+                  par manque d'idée pour mon avenir, que l'idée de me tourner vers l'informatique m'est venue. Aujourd'hui,
+                  c'est grâce à ma curiosité et ma créativité que mes choix m'ont amenés vers le développement.
+                </p>
               </div>
             </div>
+            <section className={styles.containerCards}>
+              
+              <div className={styles["flip-card"]}>
+                <div className={styles["flip-card-inner"]}>
+                  <div className={styles["flip-card-front"]}>
+                  <h1>Persévérant</h1>
+                    <img src="images/persévérance.jpg" alt="curieux" width={340} height={160} />
+                  </div>
+                  <div className={styles["flip-card-back"]}>
+                    <p>La persévérance est essentielle pour les développeurs car elle les aide à surmonter les obstacles, à trouver des solutions alternatives et à tenir face aux problèmes complexes.
+                      C'est la qualité qui permet de s'améliorer dans la difficultée.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className={styles["flip-card"]}>
+                <div className={styles["flip-card-inner"]}>
+                  <div className={styles["flip-card-front"]}>
+                  <h1>Curieux</h1>
+                    <img src="images/curieux.jpg" alt="curieux" width={340} height={160} />          
+                  </div>
+                  <div className={styles["flip-card-back"]}>
+                    <p>La curiosité est essentielle pour un développeur car elle stimule l'apprentissage continu, la créativité et la prise de risque.
+                      Les développeurs curieux sont plus enclins à chercher des solutions innovantes et à résoudre des problèmes complexes.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className={styles["flip-card"]}>
+                <div className={styles["flip-card-inner"]}>
+                  <div className={styles["flip-card-front"]}>
+                  <h1>Créatif</h1>
+                    <img src="images/créativité.webp" alt="Avatar" width={340} height={160} />
+                  </div>
+                  <div className={styles["flip-card-back"]}>
+                    <p>La créativité est importante pour un développeur car elle permet de trouver des solutions originales et d'offrir une expérience utilisateur exceptionnelle.
+                      La créativité permet également de se démarquer en proposant des fonctionnalités uniques et innovantes.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </section>
       </main>
