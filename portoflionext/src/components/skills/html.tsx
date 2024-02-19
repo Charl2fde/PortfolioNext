@@ -2,7 +2,6 @@
 
 import React, { useEffect } from 'react';
 import styles from '@/styles/html.module.css';
-import skillsEffects from '@/utils/skillsEffects'
 
 const Html = () => {
     return (
@@ -13,7 +12,6 @@ const Html = () => {
                     <p>HTML</p>
                 </h2>
             </div>
-            <skillsEffects/>
         </div>
     );
 };
