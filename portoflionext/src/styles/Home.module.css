@@ -206,7 +206,7 @@
 /* compétences */
 
 .containerCompétences {
-    height: 60rem;
+    height: 45rem;
     width: 100%;
     background-color: rgb(46, 46, 46);
     padding-top: 60px;
@@ -250,4 +250,10 @@
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5),
         0 0 10px rgba(255, 0, 0, 0.5),
         0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.containerProjets {
+    background-color: rgb(24, 24, 24);
+    padding-top: 60px;
+    height: 50rem;
 }
