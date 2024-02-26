@@ -4,13 +4,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(24, 24, 24);
+    background: rgb(24, 24, 24, 0.9);
     padding: 0.5rem 0rem;
     color: #fff;
     height: 10vh;
     width: 100%;
     position: fixed;
     border-bottom: 1px rgb(255, 255, 255) solid;
+    z-index: 1000;
 }
 
 .logo img {

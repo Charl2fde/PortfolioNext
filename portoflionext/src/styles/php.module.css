@@ -33,3 +33,11 @@
     /* La taille du texte pour le pourcentage */
     text-align: center;
 }
+
+.progressBg {
+    fill: none;
+    stroke: #333;
+    /* Couleur du cercle de fond */
+    stroke-width: 10;
+    /* Assurez-vous que cela correspond au stroke-width du cercle de progression */
+}

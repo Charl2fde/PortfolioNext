@@ -69,6 +69,14 @@ const Html: React.FC<HtmlProps> = ({ percentage }) => {
                 height={circleRadius * 2}
                 viewBox={`0 0 ${circleRadius * 2} ${circleRadius * 2}`}
             >
+                {/* Cercle de fond - toujours visible */}
+                <circle
+                    className={styles.progressBg}
+                    r={normalizedRadius}
+                    cx={circleRadius}
+                    cy={circleRadius}
+                />
+                {/* Cercle de progression - animé */}
                 <circle
                     className={styles.progressMeter}
                     strokeDasharray={`${circumference} ${circumference}`}
@@ -77,16 +85,6 @@ const Html: React.FC<HtmlProps> = ({ percentage }) => {
                     cx={circleRadius}
                     cy={circleRadius}
                 />
-                {/* Génération des graduations autour du cercle */}
-                {Array.from({ length: 100 }, (_, i) => (
-                    <line
-                        key={i}
-                        y1={circleRadius - 5}
-                        y2={circleRadius - 15}
-                        transform={`rotate(${(360 / 100) * i} ${circleRadius} ${circleRadius})`}
-                        className={styles.progressMarker}
-                    />
-                ))}
             </svg>
             {/* Affichage du pourcentage au centre du cercle */}
             <div className={styles.progressValue}>{percentage}%</div>

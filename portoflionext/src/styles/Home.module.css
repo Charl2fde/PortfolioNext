@@ -5,6 +5,7 @@
     height: 90vh;
     background: url('/images/dév.png');
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -194,7 +195,7 @@
     background-color: rgb(46, 46, 46);
     color: white;
     transform: rotateY(180deg);
-    text-align:justify;
+    text-align: justify;
     text-indent: 60px;
 }
 
@@ -223,9 +224,10 @@
 
 .compétencesFade {
     height: 280px;
-    background-image: linear-gradient(to top right, rgb(255, 0, 0), rgb(255, 215, 215));;
+    background-image: linear-gradient(to top right, rgb(255, 0, 0), rgb(255, 215, 215));
+    ;
     margin: 6rem 5%;
-    padding:4px 4px ;
+    padding: 4px 4px;
 }
 
 .compétencesBg {
@@ -249,4 +251,3 @@
         0 0 10px rgba(255, 0, 0, 0.5),
         0 0 20px rgba(255, 0, 0, 0.5);
 }
-
