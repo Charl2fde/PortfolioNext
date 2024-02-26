@@ -1,8 +1,12 @@
 /* components/Separator.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 .separator {
     width: 40rem;
     height: 2px;
     background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 255));
-    margin: 0 35%;
 }

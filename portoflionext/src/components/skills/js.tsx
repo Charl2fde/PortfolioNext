@@ -1,14 +1,14 @@
 // Importation des hooks React nécessaires et du fichier de styles CSS module.
 import React, { useEffect, useRef, useState } from 'react';
-import styles from '@/styles/html.module.css'; // Assurez-vous que le chemin vers votre fichier CSS module est correct.
+import styles from '@/styles/js.module.css'; // Assurez-vous que le chemin vers votre fichier CSS module est correct.
 
 // Définition de l'interface des props attendues par le composant, ici un seul pourcentage.
-interface HtmlProps {
+interface JsProps {
     percentage: number;
 }
 
 // Déclaration du composant fonctionnel Html qui accepte les HtmlProps.
-const Html: React.FC<HtmlProps> = ({ percentage }) => {
+const Js: React.FC<JsProps> = ({ percentage }) => {
     // useRef pour créer une référence à l'élément DOM qui sera utilisé pour observer l'entrée dans le viewport.
     const ref = useRef(null);
     // useState pour définir et modifier l'état de visibilité du composant.
@@ -95,4 +95,4 @@ const Html: React.FC<HtmlProps> = ({ percentage }) => {
 };
 
 // Exportation par défaut du composant Html pour qu'il soit réutilisable ailleurs.
-export default Html;
+export default Js;

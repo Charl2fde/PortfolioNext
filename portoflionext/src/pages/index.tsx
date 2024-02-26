@@ -4,6 +4,10 @@ import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/navbar";
 import Separator from "@/components/separator";
 import Html from "@/components/skills/html";
+import Css from "@/components/skills/css";
+import Php from "@/components/skills/php";
+import Js from "@/components/skills/js";
+import Sql from "@/components/skills/sql";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -108,7 +112,26 @@ export default function Home() {
           </div>
           <div className={styles.compétencesFade}>
             <div className={styles.compétencesBg}>
-              <Html/>
+              <div className={styles.progressCard}>
+                <Html percentage={90} />
+                <h2>Html</h2>
+              </div>
+              <div className={styles.progressCard}>
+                <Css percentage={85} />
+                <h2>Css</h2>
+              </div>
+              <div className={styles.progressCard}>
+                <Js percentage={35} />
+                <h2>Js</h2>
+              </div>
+              <div className={styles.progressCard}>
+                <Php percentage={65} />
+                <h2>Php</h2>
+              </div>
+              <div className={styles.progressCard}>
+                <Sql percentage={75} />
+                <h2>Sql</h2>
+              </div>
             </div>
           </div>
         </section>
