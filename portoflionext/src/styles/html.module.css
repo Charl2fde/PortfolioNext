@@ -1,56 +1,90 @@
-.compétences {
-    position: relative;
+.progress {
     width: 200px;
     height: 200px;
-}
-
-.compétences .rating {
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 100%;
-    height: 100%;
-    background: #333;
+    overflow: hidden;
+    /* Assurez-vous que rien ne dépasse du cercle */
 }
 
-.compétences .rating .block {
+.progress i {
     position: absolute;
-    width: 2px;
-    height: 5px;
-    background: #000000;
+    width: 100%;
+    /* Permet à l'élément i de s'étendre sur tout le cercle */
+    height: 100%;
+    transform: rotate(calc(var(--i) * (360deg / var(--tlt-br-cnt))));
+}
+
+.progress i::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    /* Positionne le début des barres juste à l'intérieur du cercle */
     left: 50%;
-    transform-origin: 50% 100px;
+    /* Centre les barres horizontalement */
+    background: hsla(0, 0%, 100%, 0.12);
+    /* Couleur des barres inactives */
+    width: 2px;
+    /* Largeur des barres */
+    height: 15px;
+    /* Longueur des barres */
+    border-radius: 2px;
+    /* Rayon de bordure pour adoucir les bords des barres */
+    transform: translateX(-50%) rotate(0deg);
+    /* Centre les barres verticalement */
+    transform-origin: top;
+    /* Origine de la transformation au sommet des barres */
     opacity: 0;
-    animation: animate 0.1s linear forwards;
-}
-@keyframes animate{
-    to{
-        opacity: 1;
-    }
+    /* Commence avec une opacité de 0 pour l'animation */
 }
 
-.compétences .rating .block:nth-child(-n+91){
-    background: #f00;
-    box-shadow: 0 0 15px rgb(197, 0, 0)
-                0 0 30px rgb(143, 0, 0);
+.progress .selected-demo::after {
+    background: hsl(60, 100%, 50%);
+    /* Couleur des barres actives */
+    box-shadow:
+        0 0 1px hsl(60, 100%, 50%),
+        0 0 3px hsl(60, 100%, 30%),
+        0 0 4px hsl(60, 100%, 10%);
 }
 
-.compétences .rating h2 {
+.percent-text {
+    font-size: 3rem;
+    /* Taille du texte pour le pourcentage */
+    color: yellow;
+    /* Couleur du texte */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 500;
-    text-align: center;
-    line-height: 1.5em;
+    /* Centre le texte dans le cercle */
+    opacity: 0;
+    /* Commence avec une opacité de 0 pour l'animation */
 }
 
-.compétences .rating h2 span {
-    font-size: 2.5em;
-    font-weight: 700;
+/* Classe pour contrôler l'animation des barres */
+.animate::after {
+    animation: barCreationAnimation 100ms ease forwards;
+    animation-delay: calc(var(--i) * 15ms);
 }
 
-.compétences .rating h2 sup {
-    font-size: 1.5em;
-    font-weight: 300;
+/* Classe pour contrôler l'apparition du texte */
+.animate-text {
+    animation: textAppear 500ms ease forwards;
+    animation-delay: calc(var(--tlt-br-cnt) * 15ms / 2);
+}
+
+@keyframes barCreationAnimation {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes textAppear {
+    to {
+        opacity: 1;
+    }
 }
