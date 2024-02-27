@@ -8,7 +8,6 @@ import Css from "@/components/skills/css";
 import Php from "@/components/skills/php";
 import Js from "@/components/skills/js";
 import Sql from "@/components/skills/sql";
-import Slider from "@/components/slider/slider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -138,7 +137,9 @@ export default function Home() {
         </section>
         <section className={styles.containerProjets}>
           <Separator/>
-          <Slider slides={[]} />
+          <div className={styles.titleProjets}>
+            <h1>Projets</h1>
+          </div>
         </section>
       </main>
     </>

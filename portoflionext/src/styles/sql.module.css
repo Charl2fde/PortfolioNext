@@ -20,7 +20,7 @@
     /* La couleur de la barre de progression */
     stroke-width: 10;
     /* L'épaisseur de la barre de progression */
-    transition: stroke-dashoffset 2s ease 0s;
+    transition: stroke-dashoffset 3s ease 0s;
     stroke-linecap: round;
     /* Les extrémités de la barre de progression arrondies */
 }
