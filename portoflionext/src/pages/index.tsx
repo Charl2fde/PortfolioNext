@@ -8,6 +8,7 @@ import Css from "@/components/skills/css";
 import Php from "@/components/skills/php";
 import Js from "@/components/skills/js";
 import Sql from "@/components/skills/sql";
+import Footer from "@/components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -68,7 +69,7 @@ export default function Home() {
                 <div className={styles["flip-card-inner"]}>
                   <div className={styles["flip-card-front"]}>
                     <h1>Persévérant</h1>
-                    <img src="images/persévérance.jpg" alt="curieux" width={340} height={160} />
+                    <img src="images/persévérance.jpg" alt="curieux"/>
                   </div>
                   <div className={styles["flip-card-back"]}>
                     <p>La persévérance est essentielle pour les développeurs car elle les aide à surmonter les obstacles, à trouver des solutions alternatives et à tenir face aux problèmes complexes.
@@ -81,7 +82,7 @@ export default function Home() {
                 <div className={styles["flip-card-inner"]}>
                   <div className={styles["flip-card-front"]}>
                     <h1>Curieux</h1>
-                    <img src="images/curieux.jpg" alt="curieux" width={340} height={160} />
+                    <img src="images/curieux.jpg" alt="curieux" />
                   </div>
                   <div className={styles["flip-card-back"]}>
                     <p>La curiosité est essentielle pour un développeur car elle stimule l'apprentissage continu, la créativité et la prise de risque.
@@ -94,11 +95,11 @@ export default function Home() {
                 <div className={styles["flip-card-inner"]}>
                   <div className={styles["flip-card-front"]}>
                     <h1>Créatif</h1>
-                    <img src="images/créativité.webp" alt="Avatar" width={340} height={160} />
+                    <img src="images/créativité.webp" alt="Avatar"/>
                   </div>
                   <div className={styles["flip-card-back"]}>
-                    <p>La créativité est importante pour un développeur car elle permet de trouver des solutions originales et d'offrir une expérience utilisateur exceptionnelle.
-                      La créativité permet également de se démarquer en proposant des fonctionnalités uniques et innovantes.</p>
+                    <p>La créativité est importante pour un développeur, elle permet de trouver des solutions originales et d'offrir une expérience utilisateur exceptionnelle.
+                      La créativité permet de se démarquer en proposant des fonctionnalités uniques et innovantes.</p>
                   </div>
                 </div>
               </div>
@@ -136,12 +137,13 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.containerProjets}>
-          <Separator/>
+          <Separator />
           <div className={styles.titleProjets}>
             <h1>Projets</h1>
           </div>
         </section>
       </main>
+      <Footer/>
     </>
   );
 }
