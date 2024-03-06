@@ -7,7 +7,7 @@
     background: rgb(24, 24, 24, 0.9);
     padding: 0.5rem 0rem;
     color: #fff;
-    height: 15vh;
+    height: 10vh;
     width: 100%;
     position: fixed;
     border-bottom: 1px rgb(255, 255, 255) solid;
@@ -34,4 +34,61 @@
     margin: 0rem 2rem;
 }
 
-/* Style supplémentaire si nécessaire */
+@media (min-width: 1921px) {
+    .navbar {
+        padding: 1rem 2rem;
+        /* Plus d'espacement à l'intérieur de la navbar */
+        height: 11vh;
+        /* Augmentation de la hauteur de la navbar */
+    }
+
+    .logo img {
+        width: 8rem;
+        /* Logo plus grand */
+        margin-left: 2rem;
+        /* Ajustement de la marge */
+    }
+
+    .navLinks {
+        margin-right: 2rem;
+        /* Ajustement de la marge */
+    }
+
+    .navLinks a {
+        font-size: 2rem;
+        /* Taille de police plus grande pour les liens */
+        margin: 0 3rem;
+        /* Plus d'espacement entre les liens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        /* Empile les éléments verticalement */
+        padding: 1rem;
+        height: auto;
+        /* Hauteur auto pour s'adapter au contenu */
+    }
+
+    .logo img {
+        margin-left: 1rem;
+        /* Réduction de la marge gauche */
+        width: 6rem;
+        /* Réduction de la taille du logo */
+    }
+
+    .navLinks {
+        margin-right: 1rem;
+        /* Réduction de la marge droite */
+        margin-top: 1rem;
+        /* Espace au-dessus des liens */
+    }
+
+    .navLinks a {
+        font-size: 1.4rem;
+        /* Réduction de la taille de la police */
+        margin: 0 1rem;
+        /* Réduction de l'espacement entre les liens */
+    }
+}
