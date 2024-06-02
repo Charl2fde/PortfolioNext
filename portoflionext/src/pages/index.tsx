@@ -9,6 +9,8 @@ import Php from "@/components/skills/php";
 import Js from "@/components/skills/js";
 import Sql from "@/components/skills/sql";
 import Footer from "@/components/footer/footer";
+import MessageInput from "@/components/form/message";
+import NameInput from "@/components/form/nom";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -69,7 +71,7 @@ export default function Home() {
                 <div className={styles["flip-card-inner"]}>
                   <div className={styles["flip-card-front"]}>
                     <h1>Persévérant</h1>
-                    <img src="images/persévérance.jpg" alt="curieux"/>
+                    <img src="images/persévérance.jpg" alt="curieux" />
                   </div>
                   <div className={styles["flip-card-back"]}>
                     <p>La persévérance est essentielle pour les développeurs car elle les aide à surmonter les obstacles, à trouver des solutions alternatives et à tenir face aux problèmes complexes.
@@ -95,7 +97,7 @@ export default function Home() {
                 <div className={styles["flip-card-inner"]}>
                   <div className={styles["flip-card-front"]}>
                     <h1>Créatif</h1>
-                    <img src="images/créativité.webp" alt="Avatar"/>
+                    <img src="images/créativité.webp" alt="Avatar" />
                   </div>
                   <div className={styles["flip-card-back"]}>
                     <p>La créativité est importante pour un développeur, elle permet de trouver des solutions originales et d'offrir une expérience utilisateur exceptionnelle.
@@ -142,8 +144,23 @@ export default function Home() {
             <h1>Projets</h1>
           </div>
         </section>
+        <section className={styles.containerContact}>
+          <Separator />
+          <div className={styles.titleContact}>
+            <h1>Me contacter</h1>
+          </div>
+          <div className={styles.containerForm}>
+            <div className={styles.leftForm}>
+              <MessageInput />
+              <NameInput />
+            </div>
+            <div className={styles.rightForm}>
+
+            </div>
+          </div>
+        </section>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

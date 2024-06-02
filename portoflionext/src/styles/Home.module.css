@@ -16,7 +16,7 @@
 .titleHomePage {
     font-size: 7rem;
     color: rgb(255, 255, 255);
-    margin-top: 12rem;
+    margin-top: 17rem;
     margin-left: 10rem;
     margin-bottom: 2rem;
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5),
@@ -274,4 +274,39 @@
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5),
         0 0 10px rgba(255, 0, 0, 0.5),
         0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+/* contact */
+
+.containerContact {
+    background-color: rgb(46, 46, 46);
+    padding-top: 60px;
+    height: 50rem;
+}
+
+.titleContact {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 85px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5),
+        0 0 10px rgba(255, 0, 0, 0.5),
+        0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftForm {
+    width: 50%;
+    padding: 3% 5%;
+}
+
+.rightForm {
+    width: 50%;
+    content: end;
+    background-color: #ffffff;
+    padding: 3% 5%;
 }
